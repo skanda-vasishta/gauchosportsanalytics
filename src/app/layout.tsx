@@ -15,13 +15,13 @@ import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 export async function generateMetadata() {
   return {
     metadataBase: new URL(`https://${baseURL}`),
-    title: home.title,
-    description: home.description,
+    title: "Gaucho Sports Analytics - UCSB Athletics",
+    description: "Advanced sports analytics platform for UCSB Athletics, providing real-time statistics and performance insights.",
     openGraph: {
-      title: `${person.firstName}'s Portfolio`,
-      description: "Portfolio website showcasing my work.",
+      title: "Gaucho Sports Analytics",
+      description: "Empowering UCSB Athletics with data-driven insights and advanced analytics.",
       url: baseURL,
-      siteName: `${person.firstName}'s Portfolio`,
+      siteName: "Gaucho Sports Analytics",
       locale: "en_US",
       type: "website",
     },

@@ -54,19 +54,20 @@ export default function About() {
     {
       title: about.work.title,
       display: about.work.display,
-      items: about.work.experiences.map((experience) => experience.company),
+      items: about.work.experiences?.map((experience) => experience.company) || [],
     },
     {
       title: about.studies.title,
       display: about.studies.display,
-      items: about.studies.institutions.map((institution) => institution.name),
+      items: about.studies.institutions?.map((institution) => institution.name) || [],
     },
     {
       title: about.technical.title,
       display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      items: about.technical.skills?.map((skill) => skill.title) || [],
     },
-  ];
+  ].filter(section => section.display);
+
   return (
     <Column maxWidth="m">
       <script
@@ -75,19 +76,14 @@ export default function About() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Person",
+            "@type": "Organization",
             name: person.name,
-            jobTitle: person.role,
             description: about.intro.description,
             url: `https://${baseURL}/about`,
             image: `${baseURL}/images/${person.avatar}`,
             sameAs: social
-              .filter((item) => item.link && !item.link.startsWith("mailto:")) // Filter out empty links and email links
+              .filter((item) => item.link && !item.link.startsWith("mailto:"))
               .map((item) => item.link),
-            worksFor: {
-              "@type": "Organization",
-              name: about.work.experiences[0].company || "",
-            },
           }),
         }}
       />
@@ -178,25 +174,25 @@ export default function About() {
                 {social.map(
                   (item) =>
                     item.link && (
-                        <>
-                            <Button
-                                className="s-flex-hide"
-                                key={item.name}
-                                href={item.link}
-                                prefixIcon={item.icon}
-                                label={item.name}
-                                size="s"
-                                variant="secondary"
-                            />
-                            <IconButton
-                                className="s-flex-show"
-                                size="l"
-                                key={`${item.name}-icon`}
-                                href={item.link}
-                                icon={item.icon}
-                                variant="secondary"
-                            />
-                        </>
+                      <>
+                        <Button
+                          className="s-flex-hide"
+                          key={item.name}
+                          href={item.link}
+                          prefixIcon={item.icon}
+                          label={item.name}
+                          size="s"
+                          variant="secondary"
+                        />
+                        <IconButton
+                          className="s-flex-show"
+                          size="l"
+                          key={`${item.name}-icon`}
+                          href={item.link}
+                          icon={item.icon}
+                          variant="secondary"
+                        />
+                      </>
                     ),
                 )}
               </Flex>

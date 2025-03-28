@@ -1,70 +1,67 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Gaucho Sports",
+  lastName: "Analytics",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Bridging the gap between tech and sports at UCSB",
+  avatar: "/images/logo.png",
+  location: "Santa Barbara, CA",
+  languages: ["English", "Spanish"],
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to Gaucho Analytics Updates</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Stay updated with the latest sports analytics insights, game statistics, and UCSB Athletics performance metrics.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/gaucho-sports-analytics",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/company/gaucho-sports-analytics",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://twitter.com/UCSBAthletics",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:analytics@athletics.ucsb.edu",
   },
 ];
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  title: "Gaucho Sports Analytics",
+  description: "Advanced sports analytics platform for UCSB Athletics",
+  headline: <>Empowering UCSB Athletics with Data-Driven Insights</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      A comprehensive analytics platform for <InlineCode>UCSB Athletics</InlineCode>, delivering
+      <br /> real-time statistics, performance tracking, and strategic insights.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: "About Us",
+  description: "Discover how Gaucho Sports Analytics is transforming UCSB Athletics",
   tableOfContent: {
     display: true,
     subItems: false,
@@ -73,60 +70,62 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "https://cal.com/gaucho-analytics",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        We unite tech and sports enthusiasts to innovate both fields collaboratively! Through collaborative projects, workshops, and networking opportunities, we seek to foster a deeper understanding of sports analytics, encourage innovation, and develop skills that prepare members for future careers in industry.
+
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "What We Do",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Workshops",
+        // timeframe: "Core Feature",
+        // role: "Learn ML and Data Science through sports",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Learn the fundamentals of industry-relevant data science/analytics and machine learning skills with real-world sports data.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Become familiar with data analysis tools like Numpy, Pandas, MatplotLib, and Seaborn, as well as machine learning frameworks like PyTorch and Scikit-Learn.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/python-logo-1.png",
+            alt: "Analytics Dashboard",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/python-logo-1.png",
+            alt: "Analytics Dashboard",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Team Insights",
+        timeframe: "Advanced Analytics",
+        role: "Strategic Analysis",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Created detailed visualization tools for analyzing team formations, player movements,
+            and game strategies across different sports.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Integrated advanced statistical models to identify performance patterns and provide
+            actionable insights for coaching staff.
           </>,
         ],
         images: [],
@@ -134,50 +133,37 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
-    ],
+    display: false,
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: false,
+    title: "Technical Capabilities",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Real-time Processing",
+        description: <>Advanced data processing pipeline handling live game statistics and player tracking data.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            alt: "Real-time Processing",
             width: 16,
             height: 9,
           },
           {
             src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            alt: "Data Visualization",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Machine Learning",
+        description: <>Sophisticated ML models for player performance prediction and strategy optimization.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "Machine Learning Models",
             width: 16,
             height: 9,
           },
@@ -189,15 +175,13 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Sports Analytics Insights",
+  description: "Latest updates and insights from Gaucho Sports Analytics",
 };
 
 const work = {
   label: "Work",
-  title: "My projects",
+  title: "Our Projects",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes

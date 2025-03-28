@@ -1,27 +1,30 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "gaucho-sports-analytics.ucsb.edu";
 
 const routes = {
-  "/": true,
+  "/": false,
   "/about": true,
-  "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/projects": true,
+  "/workshops": true,
+  "/people": true,
+  "/work": false,
+  "/blog": false,
+  "/gallery": false,
 };
 
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/work/team-performance-analytics": true,
 };
 
 const style = {
   theme: "dark", // dark | light
-  neutral: "gray", // sand | gray | slate
-  brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "orange", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  neutral: "slate", // sand | gray | slate
+  brand: "blue", // Using navy blue for UCSB
+  accent: "yellow", // Using gold for UCSB
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
+  border: "conservative", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
 };
@@ -47,7 +50,7 @@ const effects = {
   dots: {
     display: true,
     size: 2,
-    color: "brand-on-background-weak",
+    color: "accent-on-background-weak", // Changed to use accent color (gold)
     opacity: 20,
   },
   lines: {
@@ -63,12 +66,12 @@ const effects = {
 };
 
 const display = {
-  location: true,
-  time: true,
+  location: false,
+  time: false,
 };
 
 const mailchimp = {
-  action: "https://url/subscribe/post?parameters",
+  action: "https://ucsb.us1.list-manage.com/subscribe/post?parameters",
   effects: {
     mask: {
       cursor: false,
