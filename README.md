@@ -34,6 +34,6 @@ Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
 
 
-technically deployed here:
+Deployed here, every push to main should rebuild:
 https://gsac-website.vercel.app/about
 
