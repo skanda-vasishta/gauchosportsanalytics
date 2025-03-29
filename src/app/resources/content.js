@@ -8,7 +8,7 @@ const person = {
   },
   role: "Bridging the gap between tech and sports at UCSB",
   avatar: "/images/logo.png",
-  location: "Santa Barbara, CA",
+  location: "UCSB",
   languages: ["English", "Spanish"],
 };
 
@@ -33,15 +33,15 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/company/gaucho-sports-analytics",
   },
-  {
-    name: "X",
-    icon: "x",
-    link: "https://twitter.com/UCSBAthletics",
-  },
+  // {
+  //   name: "X",
+  //   icon: "x",
+  //   link: "https://twitter.com/UCSBAthletics",
+  // },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:analytics@athletics.ucsb.edu",
+    link: "mailto:gauchosportsanayltics@gmail.com",
   },
 ];
 
@@ -90,7 +90,7 @@ const about = {
       {
         company: "Workshops",
         // timeframe: "Core Feature",
-        // role: "Learn ML and Data Science through sports",
+        role: "Learn ML and Data Science through sports datasets",
         achievements: [
           <>
             Learn the fundamentals of industry-relevant data science/analytics and machine learning skills with real-world sports data.
@@ -100,32 +100,30 @@ const about = {
           </>,
         ],
         images: [
-          {
-            src: "/images/python-logo-1.png",
-            alt: "Analytics Dashboard",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/python-logo-1.png",
-            alt: "Analytics Dashboard",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/python-logo-1.png",
+          //   alt: "Analytics Dashboard",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/python-logo-1.png",
+          //   alt: "Analytics Dashboard",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Team Insights",
-        timeframe: "Advanced Analytics",
-        role: "Strategic Analysis",
+        company: "Projects",
+        // timeframe: "Advanced Analytics",
+        role: "Do real-world technical projects with real sports teams",
         achievements: [
           <>
-            Created detailed visualization tools for analyzing team formations, player movements,
-            and game strategies across different sports.
+            Take part in unique predictive analysis, modelling, and visualization projects while solving complex problems faced by sports teams.
           </>,
           <>
-            Integrated advanced statistical models to identify performance patterns and provide
-            actionable insights for coaching staff.
+            Currently working with UCSB Division 1 Basketball and Baseball teams.
           </>,
         ],
         images: [],
