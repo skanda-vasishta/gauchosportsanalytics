@@ -35,5 +35,5 @@ Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 
 
 Deployed here, every push to main should rebuild:
-https://gsac-website.vercel.app/about
+https://gauchosportsanalytics.vercel.app
 
