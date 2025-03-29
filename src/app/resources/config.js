@@ -1,7 +1,7 @@
 const baseURL = "gaucho-sports-analytics.ucsb.edu";
 
 const routes = {
-  "/": false,
+  "/": true,
   "/about": true,
   "/projects": true,
   "/workshops": true,
