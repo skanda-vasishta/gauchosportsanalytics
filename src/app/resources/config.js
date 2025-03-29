@@ -21,12 +21,12 @@ const style = {
   theme: "dark", // dark | light
   neutral: "slate", // sand | gray | slate
   brand: "blue", // Using navy blue for UCSB
-  accent: "yellow", // Using gold for UCSB
+  accent: "blue", // Using gold for UCSB
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
-  border: "conservative", // rounded | playful | conservative
+  border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
-  transition: "all", // all | micro | macro
+  transition: "micro", // all | micro | macro
 };
 
 const effects = {
@@ -34,7 +34,7 @@ const effects = {
     cursor: true,
     x: 0,
     y: 0,
-    radius: 75,
+    radius: 35,
   },
   gradient: {
     display: true,
@@ -45,23 +45,23 @@ const effects = {
     tilt: 0,
     colorStart: "brand-background-strong",
     colorEnd: "static-transparent",
-    opacity: 50,
+    opacity: 20,
   },
   dots: {
     display: true,
     size: 2,
-    color: "accent-on-background-weak", // Changed to use accent color (gold)
+    color: "neutral-alpha-weak",
     opacity: 20,
   },
   lines: {
-    display: false,
+    display: true,
     color: "neutral-alpha-weak",
-    opacity: 100,
+    opacity: 60,
   },
   grid: {
-    display: false,
+    display: true,
     color: "neutral-alpha-weak",
-    opacity: 100,
+    opacity: 60,
   },
 };
 

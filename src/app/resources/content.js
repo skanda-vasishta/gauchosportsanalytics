@@ -1,19 +1,29 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Gaucho Sports",
-  lastName: "Analytics",
+  firstName: "Gaucho",
+  lastName: "Sports Analytics",
   get name() {
-    return `${this.firstName} ${this.lastName}`;
+    return (
+      <>
+        {this.firstName} <span style={{ color: "gold" }}>{this.lastName}</span>
+      </>
+    );
   },
-  role: "Bridging the gap between tech and sports at UCSB",
+  role: (
+    <>
+      Bridging the gap between tech and sports at{" "}
+      <span style={{ color: "gold" }}>UCSB</span>
+    </>
+  ),
   avatar: "/images/logo.png",
   location: "UCSB",
-  languages: ["English", "Spanish"],
+  languages: [],
 };
 
+
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to Gaucho Analytics Updates</>,
   description: (
     <>
@@ -26,7 +36,7 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/gaucho-sports-analytics",
+    link: "https://github.com/gauchosportsclub",
   },
   {
     name: "LinkedIn",
