@@ -28,7 +28,7 @@ export default function People() {
       <Column gap="s">
         <Heading variant="display-strong-xl">Our Team</Heading>
         <Text variant="display-default-s" onBackground="neutral-weak">
-          The experts behind Gaucho Sports Analytics
+          Coming soon
         </Text>
       </Column>
       {/* Team member content will go here */}

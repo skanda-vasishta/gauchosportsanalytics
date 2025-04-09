@@ -1,4 +1,4 @@
-import { Column, Heading, Text, Card, Grid, Badge, Button, Link } from "@/once-ui/components";
+import { Column, Heading, Text, Card, Grid, Badge, Button } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 
 export async function generateMetadata() {
@@ -81,7 +81,7 @@ export default function Workshops() {
                 <Text>{workshop.topics.join(", ")}</Text>
               </Column>
               
-              <Button as="a" href={workshop.materialLink}>
+              <Button href={workshop.materialLink}>
                 View Materials
               </Button>
             </Column>

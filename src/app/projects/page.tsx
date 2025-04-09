@@ -48,7 +48,7 @@ export default function Projects() {
       <Column gap="m">
         <Heading variant="display-strong-m">Ongoing Projects</Heading>
         
-        <Grid columns={1} columnsMd={2} gap="m">
+        <Grid columns={1}  gap="m">
           
           <Card>
             <Column gap="m" padding="l">
