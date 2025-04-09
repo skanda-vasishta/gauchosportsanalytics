@@ -43,11 +43,11 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/company/gaucho-sports-analytics",
   },
-  // {
-  //   name: "X",
-  //   icon: "x",
-  //   link: "https://twitter.com/UCSBAthletics",
-  // },
+  {
+    name: "Discord",
+    icon: "discord",
+    link: "https://discord.gg/ZghKwtWKZD",
+  },
   {
     name: "Email",
     icon: "email",
