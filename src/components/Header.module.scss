@@ -1,6 +1,8 @@
 .position {
     position: sticky;
     top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .mask {
@@ -13,9 +15,8 @@
 
 @media (--s) {
     .position {
-        top: auto;
-        position: fixed;
-        bottom: var(--static-space-24);
+        position: sticky;
+        top: 0;
     }
 
     .mask {
