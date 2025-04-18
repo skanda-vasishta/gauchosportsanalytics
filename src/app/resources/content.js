@@ -58,12 +58,11 @@ const social = [
 const home = {
   label: "Home",
   title: "Gaucho Sports Analytics",
-  description: "Advanced sports analytics platform for UCSB Athletics",
-  headline: <>Empowering UCSB Athletics with Data-Driven Insights</>,
+  description: "UCSB's first ever sports analytics club",
+  headline: <>UCSB's first ever sports analytics club</>,
   subline: (
     <>
-      A comprehensive analytics platform for <InlineCode>UCSB Athletics</InlineCode>, delivering
-      <br /> real-time statistics, performance tracking, and strategic insights.
+      UCSB's first ever sports analytics club
     </>
   ),
 };

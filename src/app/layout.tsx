@@ -15,11 +15,11 @@ import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 export async function generateMetadata() {
   return {
     metadataBase: new URL(`https://${baseURL}`),
-    title: "Gaucho Sports Analytics - UCSB Athletics",
-    description: "Advanced sports analytics platform for UCSB Athletics, providing real-time statistics and performance insights.",
+    title: "Gaucho Sports Analytics ",
+    description: "UCSB's first ever sports analytics club",
     openGraph: {
       title: "Gaucho Sports Analytics",
-      description: "Empowering UCSB Athletics with data-driven insights and advanced analytics.",
+      description: "UCSB's first ever sports analytics club",
       url: baseURL,
       siteName: "Gaucho Sports Analytics",
       locale: "en_US",

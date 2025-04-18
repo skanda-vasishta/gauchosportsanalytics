@@ -45,8 +45,19 @@ export default function Workshops() {
       color: "red",
       materialLink: "https://drive.google.com/drive/folders/1xT6a9YG7Xh5hQ70hTidxgmrQUVOjGvmP?usp=drive_link"
     },
+    {
+      id: 3,
+      title: "Introduction to Deep Learning",
+      // date: "January 30, 2025",
+      description: "Classify images of sports using neural networks",
+      topics: ["Python", "Deep Learning", "PyTorch "],
+      category: "March 2025",
+      color: "blue",
+      materialLink: "https://drive.google.com/drive/folders/1R5GwVoIfBQkEbyxDMOGMbQeNeTZU2zyj?usp=sharing"
+    },
   ];
 
+  
   return (
     <Column maxWidth="l" gap="xl">
       <Column gap="s">
