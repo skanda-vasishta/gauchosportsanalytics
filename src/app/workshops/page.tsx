@@ -47,13 +47,41 @@ export default function Workshops() {
     },
     {
       id: 3,
+      title: "Super Bowl Competition",
+      description: "Predict the winner of the Super Bowl based on historic data",
+      topics: ["Python", "Machine Learning", "Data Science "],
+      category: "February 2025",
+      color: "blue",
+      materialLink: "https://drive.google.com/drive/u/1/folders/1-I1cfPcKaLN4SSBy8Rf2pMEkn6313taX"
+    },
+    {
+      id: 4,
+      title: "Datathon",
+      description: "Along with Data Science UCSB and ACM @UCSB, we co-hosted a two day datathon with a sports analytics track!",
+      topics: [ "Data Science "],
+      category: "February 2025",
+      color: "blue",
+      materialLink: "https://dataorbit-2025.devpost.com/"
+    },
+    {
+      id: 5,
       title: "Introduction to Deep Learning",
       // date: "January 30, 2025",
       description: "Classify images of sports using neural networks",
       topics: ["Python", "Deep Learning", "PyTorch "],
       category: "March 2025",
-      color: "blue",
+      color: "red",
       materialLink: "https://drive.google.com/drive/folders/1R5GwVoIfBQkEbyxDMOGMbQeNeTZU2zyj?usp=sharing"
+    },
+    {
+      id: 6,
+      title: "Guest Speaker Panel with Dean Oliver and Jeremy Dumalig",
+      // date: "January 30, 2025",
+      description: "Dean Oliver is a Project Specialist, Sports Statistics @ ESPN, former Assistant Coach for the Washington Wizards, and inventor of Player Winning Percentage (PW%) metric. Jeremy Dumalig is a Basketball Operations Assistant @ Brooklyn Nets, with hands-on experience in applying analytics to player performance and team strategy",
+      topics: ["Basketball Analytics"],
+      category: "April 2025",
+      color: "blue",
+      materialLink: "https://docs.google.com/presentation/d/1OmwY251IVNdbIrt9yG9GrSaLSvlBL0SrHSV7FFVdV1w/edit?usp=sharing"
     },
   ];
 
@@ -61,7 +89,7 @@ export default function Workshops() {
   return (
     <Column maxWidth="l" gap="xl">
       <Column gap="s">
-        <Heading variant="display-strong-xl">Workshops</Heading>
+        <Heading variant="display-strong-xl">Workshops and Meetings</Heading>
         <Text variant="display-default-s" onBackground="neutral-weak"  style={{ color: "#FFD700" }}>
           Learn data science and machine learning skills
         </Text>
@@ -73,8 +101,9 @@ export default function Workshops() {
           All workshop materials remain available even after the session is complete.
         </Text>
       </Column> */}
-      
       <Column gap="l">
+      <Heading variant="display-strong-m">2024-25 Meetings</Heading>
+
         {workshops.map((workshop) => (
           <Card key={workshop.id}>
             <Column gap="m" padding="l">

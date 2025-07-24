@@ -61,7 +61,7 @@ export const Header = () => {
                 <ToggleButton
                   prefixIcon="book"
                   href="/workshops"
-                  label="Workshops"
+                  label="Workshops and Meetings"
                   selected={pathname.startsWith("/workshops")}
                 />
               )}
